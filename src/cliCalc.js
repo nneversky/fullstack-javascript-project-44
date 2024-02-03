@@ -39,7 +39,7 @@ const createEquation = (nameUser) => {
         }
     }
     if (checkTrue)
-            console.log(`Congratulations, ${nameUser}}!`);
+        console.log(`Congratulations, ${nameUser}!`);
 }
 
 export default createEquation;
