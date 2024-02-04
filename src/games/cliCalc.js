@@ -35,6 +35,7 @@ const createEquation = (nameUser) => {
         } else {
             console.log(`'${checkNum}' is wrong answer ;(. Correct answer was '${eval(equation)}'.`);
             console.log(`Let's try again, ${nameUser}!`);
+            checkTrue = false;
             break;
         }
     }

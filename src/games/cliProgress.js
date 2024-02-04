@@ -24,10 +24,10 @@ const strProgress = () => {
 }
 
 const findNumProgress = (nameUser) => {
+    console.log('What number is missing in the progression?');
     let checkTrue = false;
     for (let i = 0; i < 3; i ++){
         let arrProgress = strProgress();
-        console.log('What number is missing in the progression?');
         console.log(`Question: ${arrProgress[0]}`);
         const checkNum = readlineSync.question('Your answer: ');
         if (+checkNum === arrProgress[1]){
@@ -36,6 +36,7 @@ const findNumProgress = (nameUser) => {
         } else {
             console.log(`'${checkNum}' is wrong answer ;(. Correct answer was '${arrProgress[1]}'.`);
             console.log(`Let's try again, ${nameUser}!`);
+            checkTrue = false;
             break;
         }
     }
