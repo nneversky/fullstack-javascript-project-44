@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 import questionName from '../src/cli.js'
-import sayNOD from '../src/cliGcd.js'
+import sayNOD from '../src/games/cliGcd.js'
 
 sayNOD(questionName());
