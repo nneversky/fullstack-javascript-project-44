@@ -10,11 +10,9 @@ System Linux or console Ubuntu for Windows
 
 ### Installation:
 
-```node brain-games```
-```Welcome to the Brain Games!
-May I have your name? Aretm
-Hello, Aretm!
-```
+```node bin/brain-games``` 
+![Снимок экрана 2024-02-07 234357](https://github.com/nneversky/fullstack-javascript-project-44/assets/106491710/2c6c31ae-1f09-4bc0-9854-04be4e5b7406)
+
 
 ```node brain-calc```
 ```
