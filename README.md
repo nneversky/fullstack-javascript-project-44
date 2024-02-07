@@ -16,7 +16,7 @@ May I have your name? Aretm
 Hello, Aretm!
 ```
 
-```node brain-cals```
+```node brain-calc```
 ```
 What is the result of the expression?
 Question: 19 + 18
@@ -29,6 +29,16 @@ Question: 15 + 6
 Your answer: 21
 Correct!
 Congratulations, Artem!
+```
+```
+What is the result of the expression?
+Question: 4 * 15
+Your answer: 60
+Correct!
+Question: 11 * 18
+Your answer: 5
+'5' is wrong answer ;(. Correct answer was '198'.
+Let's try again, Artem!
 ```
 
 
