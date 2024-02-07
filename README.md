@@ -5,10 +5,10 @@
 Welcome! I suggest playing five games. Determine if a number is even, practice calculating expressions, 
 remember an arithmetic progression, find a common divisor of numbers and determine if a number is prime.
 
-#Minimum requirements:
+# Minimum requirements:
 System Linux or console Ubuntu for Windows
 
-#Installation:
+# Installation:
 
 
 
