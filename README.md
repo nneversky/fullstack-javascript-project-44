@@ -13,5 +13,12 @@ System Linux or console Ubuntu for Windows
 
 ```node brain-cals``` ```node brain-even```
 ```node brain-gcd``` ```node brain-progression```
+
+```node cli.js```
+```Welcome to the Brain Games!
+May I have your name? Aretm
+Hello, Aretm!
+```
+
 "brain-games": bin/brain-games.js
 "brain-prime": bin/brain-prime.js
