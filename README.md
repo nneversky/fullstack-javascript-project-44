@@ -1,4 +1,4 @@
-![123](https://github.com/nneversky/fullstack-javascript-project-44/assets/106491710/7162ce38-964a-4626-b16b-8e74024de5b7)### Hexlet tests and linter status:
+### Hexlet tests and linter status:
 [![Actions Status](https://github.com/nneversky/fullstack-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/nneversky/fullstack-javascript-project-44/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/bc6b1d4b7a6524a6d66c/maintainability)](https://codeclimate.com/github/nneversky/fullstack-javascript-project-44/maintainability)
 
 
@@ -8,7 +8,7 @@ remember an arithmetic progression, find a common divisor of numbers and determi
 ### Minimum requirements:
 System Linux or console Ubuntu for Windows
 
-### Installation:
+### Demonstration:
 
 ```node bin/brain-games``` 
 
