@@ -10,7 +10,7 @@ System Linux or console Ubuntu for Windows
 
 ### Demonstration:
 
-node bin/brain-games
+```node bin/brain-games```
 
 ![123](https://github.com/nneversky/fullstack-javascript-project-44/assets/106491710/49d523d5-6487-495e-8876-c7da5e05629a)
 
@@ -20,15 +20,11 @@ node bin/brain-calc
 
 ![2](https://github.com/nneversky/fullstack-javascript-project-44/assets/106491710/954df461-60b4-4699-a1e0-3ece87c5e814)
 
+node bin/brain-even
 
+![1](https://github.com/nneversky/fullstack-javascript-project-44/assets/106491710/e2965fb8-6fbd-4843-91fd-a9e972718faa)
 
-
-
-
-
-node brain-even
-
-
+![2](https://github.com/nneversky/fullstack-javascript-project-44/assets/106491710/c0eb38c6-9323-4782-a5fc-9561948d3186)
 
 
 brain-prime
