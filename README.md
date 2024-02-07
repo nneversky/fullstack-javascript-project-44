@@ -17,7 +17,8 @@ Hello, Aretm!
 ```
 
 ```node brain-cals```
-```What is the result of the expression?
+```
+What is the result of the expression?
 Question: 19 + 18
 Your answer: 37
 Correct!
