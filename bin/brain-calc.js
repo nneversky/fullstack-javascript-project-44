@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 import questionName from '../src/cli.js'
-import createEquation from '../src/games/cliCalc.js'
+import mainCalcFunc from '../src/games/calc.js'
 
-createEquation(questionName());
+mainCalcFunc(questionName());

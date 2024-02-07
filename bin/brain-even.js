@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 import questionName from '../src/cli.js'
-import checkEven from '../src/games/cliOne.js'
+import mainEvenFunc from '../src/games/even.js'
 
-checkEven(questionName());
+mainEvenFunc(questionName());

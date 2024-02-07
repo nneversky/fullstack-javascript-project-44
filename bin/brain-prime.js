@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 import questionName from '../src/cli.js'
-import checkSimpleNum from '../src/games/cliPrime.js'
+import mainPrimeFunc from '../src/games/prime.js'
 
-checkSimpleNum(questionName());
+mainPrimeFunc(questionName());

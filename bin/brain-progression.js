@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 import questionName from '../src/cli.js'
-import findNumProgress from '../src/games/cliProgress.js'
+import mainProgressionFunc from '../src/games/progression.js'
 
-findNumProgress(questionName());
+mainProgressionFunc(questionName());
