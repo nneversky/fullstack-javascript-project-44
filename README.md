@@ -1,4 +1,4 @@
-### Hexlet tests and linter status:
+![123](https://github.com/nneversky/fullstack-javascript-project-44/assets/106491710/7162ce38-964a-4626-b16b-8e74024de5b7)### Hexlet tests and linter status:
 [![Actions Status](https://github.com/nneversky/fullstack-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/nneversky/fullstack-javascript-project-44/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/bc6b1d4b7a6524a6d66c/maintainability)](https://codeclimate.com/github/nneversky/fullstack-javascript-project-44/maintainability)
 
 
@@ -11,8 +11,8 @@ System Linux or console Ubuntu for Windows
 ### Installation:
 
 ```node bin/brain-games``` 
-![Снимок экрана 2024-02-07 234357](https://github.com/nneversky/fullstack-javascript-project-44/assets/106491710/2c6c31ae-1f09-4bc0-9854-04be4e5b7406)
 
+![123](https://github.com/nneversky/fullstack-javascript-project-44/assets/106491710/49d523d5-6487-495e-8876-c7da5e05629a)
 
 ```node brain-calc```
 ```
