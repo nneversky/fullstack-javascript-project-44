@@ -8,78 +8,43 @@ remember an arithmetic progression, find a common divisor of numbers and determi
 ### Minimum requirements:
 System Linux or console Ubuntu for Windows
 
-### Installation:
+### Demonstration:
 
-```node brain-games```
-```Welcome to the Brain Games!
-May I have your name? Aretm
-Hello, Aretm!
-```
+"brain-games": "bin/brain-games.js"
 
-```node brain-calc```
-```
-Welcome to the Brain Games!
-May I have your name? Artem
-Hello, Artem!
-What is the result of the expression?
-Question: 19 + 18
-Your answer: 37
-Correct!
-Question: 2 - 16
-Your answer: -14
-Correct!
-Question: 15 + 6
-Your answer: 21
-Correct!
-Congratulations, Artem!
-```
-```
-Welcome to the Brain Games!
-May I have your name? Artem
-Hello, Artem!
-What is the result of the expression?
-Question: 4 * 15
-Your answer: 60
-Correct!
-Question: 11 * 18
-Your answer: 5
-'5' is wrong answer ;(. Correct answer was '198'.
-Let's try again, Artem!
-```
-```node brain-even``` 
-```
-Welcome to the Brain Games!
-May I have your name? Artem
-Hello, Artem!
-Answer "yes" if the number is even, otherwise answer "no".
-Question: 20
-Your answer: yes
-Correct!
-Question: 48
-Your answer: yes
-Correct!
-Question: 21
-Your answer: no
-Correct!
-Congratulations, Artem!
-```
-```
-Welcome to the Brain Games!
-May I have your name? Artem
-Hello, Artem!
-Answer "yes" if the number is even, otherwise answer "no".
-Question: 47
-Your answer: no
-Correct!
-Question: 18
-Your answer: no
-'no' is wrong answer ;(. Correct answer was 'yes'.
-Let's try again, Artem!
-```
+![123](https://github.com/nneversky/fullstack-javascript-project-44/assets/106491710/49d523d5-6487-495e-8876-c7da5e05629a)
 
 
+"brain-cals": "bin/brain-calc.js"
+
+![1](https://github.com/nneversky/fullstack-javascript-project-44/assets/106491710/352e1ea2-c3c5-4724-a0dc-a4a5b7d33589)
+
+![2](https://github.com/nneversky/fullstack-javascript-project-44/assets/106491710/954df461-60b4-4699-a1e0-3ece87c5e814)
 
 
+"brain-even": "bin/brain-even.js"
 
-```brain-prime```
-```node brain-gcd``` ```node brain-progression```
+![1](https://github.com/nneversky/fullstack-javascript-project-44/assets/106491710/e2965fb8-6fbd-4843-91fd-a9e972718faa)
+
+![2](https://github.com/nneversky/fullstack-javascript-project-44/assets/106491710/c0eb38c6-9323-4782-a5fc-9561948d3186)
+
+
+"brain-prime": "bin/brain-prime.js
+
+![1](https://github.com/nneversky/fullstack-javascript-project-44/assets/106491710/3a1a2357-7bd6-45be-a2a4-a979fcfe1b15)
+
+![2](https://github.com/nneversky/fullstack-javascript-project-44/assets/106491710/f506d014-8e45-4c4c-a777-b53129b1291b)
+
+
+"brain-gcd": "bin/brain-gcd.js"
+
+![1](https://github.com/nneversky/fullstack-javascript-project-44/assets/106491710/0690e89f-1d6b-4394-b4d9-c184df311e35)
+
+![2](https://github.com/nneversky/fullstack-javascript-project-44/assets/106491710/f209602d-5305-4926-a243-fb54a5d2b68a)
+
+
+"brain-progression" : "bin/brain-progression.js"
+
+![1](https://github.com/nneversky/fullstack-javascript-project-44/assets/106491710/95d055d9-a222-4e25-8ab6-d86eb63cdbc4)
+
+![2](https://github.com/nneversky/fullstack-javascript-project-44/assets/106491710/e7231484-9fc6-47a6-8b2d-deb0677651f4)
