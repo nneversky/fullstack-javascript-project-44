@@ -18,6 +18,9 @@ Hello, Aretm!
 
 ```node brain-calc```
 ```
+Welcome to the Brain Games!
+May I have your name? Artem
+Hello, Artem!
 What is the result of the expression?
 Question: 19 + 18
 Your answer: 37
@@ -31,6 +34,9 @@ Correct!
 Congratulations, Artem!
 ```
 ```
+Welcome to the Brain Games!
+May I have your name? Artem
+Hello, Artem!
 What is the result of the expression?
 Question: 4 * 15
 Your answer: 60
@@ -40,7 +46,40 @@ Your answer: 5
 '5' is wrong answer ;(. Correct answer was '198'.
 Let's try again, Artem!
 ```
+```node brain-even``` 
+```
+Welcome to the Brain Games!
+May I have your name? Artem
+Hello, Artem!
+Answer "yes" if the number is even, otherwise answer "no".
+Question: 20
+Your answer: yes
+Correct!
+Question: 48
+Your answer: yes
+Correct!
+Question: 21
+Your answer: no
+Correct!
+Congratulations, Artem!
+```
+```
+Welcome to the Brain Games!
+May I have your name? Artem
+Hello, Artem!
+Answer "yes" if the number is even, otherwise answer "no".
+Question: 47
+Your answer: no
+Correct!
+Question: 18
+Your answer: no
+'no' is wrong answer ;(. Correct answer was 'yes'.
+Let's try again, Artem!
+```
 
 
-```node brain-even``` ```brain-prime```
+
+
+
+```brain-prime```
 ```node brain-gcd``` ```node brain-progression```
