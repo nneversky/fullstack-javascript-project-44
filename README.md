@@ -10,11 +10,11 @@ System Linux or console Ubuntu for Windows
 
 ### Demonstration:
 
-```node bin/brain-games``` 
+node bin/brain-games
 
 ![123](https://github.com/nneversky/fullstack-javascript-project-44/assets/106491710/49d523d5-6487-495e-8876-c7da5e05629a)
 
-```node bin/brain-calc```
+node bin/brain-calc
 
 ![1](https://github.com/nneversky/fullstack-javascript-project-44/assets/106491710/352e1ea2-c3c5-4724-a0dc-a4a5b7d33589)
 
@@ -26,10 +26,10 @@ System Linux or console Ubuntu for Windows
 
 
 
-```node brain-even``` 
+node brain-even
 
 
 
 
-```brain-prime```
-```node brain-gcd``` ```node brain-progression```
+brain-prime
+node brain-gcd node brain-progression
