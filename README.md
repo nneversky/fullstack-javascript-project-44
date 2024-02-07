@@ -10,15 +10,32 @@ System Linux or console Ubuntu for Windows
 
 ### Installation:
 
-
-```node brain-cals``` ```node brain-even```
-```node brain-gcd``` ```node brain-progression```
-
 ```node cli.js```
 ```Welcome to the Brain Games!
 May I have your name? Aretm
 Hello, Aretm!
 ```
+
+```node brain-cals```
+```What is the result of the expression?
+Question: 19 + 18
+Your answer: 37
+Correct!
+Question: 2 - 16
+Your answer: -14
+Correct!
+Question: 15 + 6
+Your answer: 21
+Correct!
+Congratulations, Artem!
+```
+
+
+
+
+```node brain-even```
+```node brain-gcd``` ```node brain-progression```
+
 
 "brain-games": bin/brain-games.js
 "brain-prime": bin/brain-prime.js
