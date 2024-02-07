@@ -10,7 +10,7 @@ System Linux or console Ubuntu for Windows
 
 ### Installation:
 
-```node cli.js```
+```node brain-games```
 ```Welcome to the Brain Games!
 May I have your name? Aretm
 Hello, Aretm!
@@ -31,11 +31,5 @@ Congratulations, Artem!
 ```
 
 
-
-
-```node brain-even```
+```node brain-even``` ```brain-prime```
 ```node brain-gcd``` ```node brain-progression```
-
-
-"brain-games": bin/brain-games.js
-"brain-prime": bin/brain-prime.js
