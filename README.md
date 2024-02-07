@@ -11,7 +11,7 @@ System Linux or console Ubuntu for Windows
 ### Installation:
 
 
-
+```node brain-cals```
 "brain-games": bin/brain-games.js
 "brain-even":  bin/brain-even.js
 "brain-cals":  bin/brain-calc.js
