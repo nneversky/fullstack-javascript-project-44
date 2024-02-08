@@ -1,5 +1,4 @@
 /* eslint-disable */
-/* eslint-disable no-console */
 import sampleSay from '../index.js'
 
 
