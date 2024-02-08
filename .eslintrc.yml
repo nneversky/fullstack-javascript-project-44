@@ -6,6 +6,9 @@ plugins:
 # https://eslint.org/docs/user-guide/configuring#specifying-environments
 env:
   node: true
+  browser: true
+  es2021: true
+  jest: true
 
 extends:
   - 'airbnb-base'
@@ -13,6 +16,7 @@ extends:
 
 parserOptions:
   ecmaVersion: latest
+  sourceType: module
 
 rules:
   no-console: 0
