@@ -1,15 +1,11 @@
 /* eslint-disable */
-import sampleSay from '../index.js'
-
-const generateRandomNum = () => {
-    let num = Math.floor(Math.random(1, 100) * 50);
-    return num;
-}
+import sampleSay from '../index.js';
+import { getRandomInRange } from '../utils.js';
 
 const arrRandomNum = () => {
     const arrEquation = [];
     for (let i = 0; i < 3; i ++)
-        arrEquation.push(generateRandomNum());
+        arrEquation.push(getRandomInRange(0, 100));
 
     return arrEquation;
 }
@@ -25,7 +21,7 @@ const arrRandomNumEval = (arr) => {
 
 const mainEvenFunc = (nameUser) =>{
     const randomArr = arrRandomNum();
-    return sampleSay(nameUser, 'Answer "yes" if the number is even, otherwise answer "no".', randomArr, arrRandomNumEval(randomArr))
+    return sampleSay(nameUser, 'Answer "yes" if the number is even, otherwise answer "no".', randomArr, arrRandomNumEval(randomArr));
 }
 
 export default mainEvenFunc;

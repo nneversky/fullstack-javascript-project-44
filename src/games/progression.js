@@ -1,17 +1,12 @@
 /* eslint-disable */
-import sampleSay from '../index.js'
-
-
-const generateNum = () => {
-    let num = Math.floor(Math.random(10) * 10);
-    return num;
-}
+import sampleSay from '../index.js';
+import { getRandomInRange } from '../utils.js';
 
 const strProgress = () => {
-    let num = generateNum();
-    let num2 = generateNum();
+    let num = getRandomInRange(1, 10);
+    let num2 = getRandomInRange(1, 10);
     let numFine = [[]];
-    let numProgress = generateNum();
+    let numProgress = getRandomInRange(1, 10);
     let num3 = 0;
     for (let i = 0; i < 10; i ++){
         num2 += num;

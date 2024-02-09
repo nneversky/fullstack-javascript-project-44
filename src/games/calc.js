@@ -1,11 +1,6 @@
 /* eslint-disable */
-import sampleSay from '../index.js'
-
-
-const generateRandomNum = () => {
-    let num = Math.floor(Math.random(1, 100) * 20);
-    return num;
-}
+import sampleSay from '../index.js';
+import { getRandomInRange } from '../utils.js';
 
 const randomSymbolMath = () => {
     const symbolMath = ['-', '+', '*'];
@@ -14,7 +9,7 @@ const randomSymbolMath = () => {
 }
 
 const generateRandomEquation = () => {
-    return `${generateRandomNum()} ${randomSymbolMath()} ${generateRandomNum()}`;
+    return `${getRandomInRange(0, 50)} ${randomSymbolMath()} ${getRandomInRange(0, 50)}`;
 }
 
 const randomEquation = () => {

@@ -1,5 +1,6 @@
 /* eslint-disable */
-import sampleSay from '../index.js'
+import sampleSay from '../index.js';
+import { getRandomInRange } from '../utils.js';
 
 
 const findSimpleNum = (num) => {
@@ -12,15 +13,10 @@ const findSimpleNum = (num) => {
     return checkTrue;
 }
 
-const generateRandomNum = () => {
-    let num = Math.floor(Math.random(1, 100) * 50);
-    return num;
-}
-
 const arrRandomNum = () => {
     const arrEquation = [];
     for (let i = 0; i < 3; i ++)
-        arrEquation.push(generateRandomNum());
+        arrEquation.push(getRandomInRange(0, 100));
 
     return arrEquation;
 }

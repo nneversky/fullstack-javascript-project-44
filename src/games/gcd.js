@@ -1,6 +1,6 @@
 /* eslint-disable */
-import sampleSay from '../index.js'
-
+import sampleSay from '../index.js';
+import { getRandomInRange } from '../utils.js';
 
 const NOD = (x, y) => {
 	if (y > x) return NOD(y, x);
@@ -8,15 +8,10 @@ const NOD = (x, y) => {
 	return NOD(y, x % y);
 }
 
-const generateRandomNum = () => {
-    let num = Math.floor(Math.random(1, 100) * 50);
-    return num;
-}
-
 const arrRandomNum = () => {
     const arrEquation = [];
     for (let i = 0; i < 3; i ++)
-        arrEquation.push([generateRandomNum(), generateRandomNum()]);
+        arrEquation.push([getRandomInRange(0, 100), getRandomInRange(0, 100)]);
 
     return arrEquation;
 }

@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "type": "module",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/nneversky/fullstack-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/nneversky/fullstack-javascript-project-44/actions)",
+  "description": "This project consists of 5 console games (parity check, calculator, GCD, arithmetic progression, is the number prime?)",
   "main": "index.js",
   "bin": {
     "brain-games": "bin/brain-games.js",
@@ -11,10 +11,7 @@
     "brain-gcd": "bin/brain-gcd.js",
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  }, 
   "author": "",
   "license": "ISC",
   "dependencies": {

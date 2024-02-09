@@ -8,6 +8,12 @@ remember an arithmetic progression, find a common divisor of numbers and determi
 ### Minimum requirements:
 System Linux or console Ubuntu for Windows
 
+### Installation
+```
+1 git clone
+2 make install ("for Windows" npm ci)
+```
+
 ### Demonstration:
 
 brain-games : ```bin/brain-games.js```
