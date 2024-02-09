@@ -6,7 +6,7 @@ const strProgress = () => {
     let num = getRandomInRange(1, 10);
     let num2 = getRandomInRange(1, 10);
     let numFine = [[]];
-    let numProgress = getRandomInRange(1, 10);
+    let numProgress = getRandomInRange(0, 10);
     let num3 = 0;
     for (let i = 0; i < 10; i ++){
         num2 += num;
