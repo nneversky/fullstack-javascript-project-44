@@ -10,7 +10,7 @@ const generateRound = (question) => {
 const roundsCount = 3;
 
 const runEngine = (rules, arrGenerateRound) => {
-  const nameUser = makeWelcome()
+  const nameUser = makeWelcome();
   console.log(rules);
   for (let i = 0; i < roundsCount; i++) {
     const [value, key] = arrGenerateRound[i];
@@ -18,7 +18,9 @@ const runEngine = (rules, arrGenerateRound) => {
     if (round === String(key)) {
       console.log("Correct!");
     } else {
-      console.log(`'${round}' is wrong answer ;(. Correct answer was '${key}'.`);
+      console.log(
+        `'${round}' is wrong answer ;(. Correct answer was '${key}'.`
+      );
       return console.log(`Let's try again, ${nameUser}!`);
     }
   }

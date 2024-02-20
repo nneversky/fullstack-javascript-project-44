@@ -16,8 +16,7 @@ const arrRandomNum = () => {
 
 const arrNODNum = (arr) => {
   const arrNOD = [];
-  for (let i = 0; i < 3; i++) 
-    arrNOD.push(nod(arr[i][0], arr[i][1]));
+  for (let i = 0; i < 3; i++) arrNOD.push(nod(arr[i][0], arr[i][1]));
   return arrNOD;
 };
 
@@ -26,10 +25,14 @@ const generateArrNOD = () => {
   const arrNODNubmber = arrNODNum(arrRandomNumber);
   const arrNODandRandomNumber = [];
   for (let i = 0; i < 3; i++)
-    arrNODandRandomNumber.push([`${arrRandomNumber[i][0]} ${arrRandomNumber[i][1]}`, arrNODNubmber[i]]);
+    arrNODandRandomNumber.push([
+      `${arrRandomNumber[i][0]} ${arrRandomNumber[i][1]}`,
+      arrNODNubmber[i],
+    ]);
   return arrNODandRandomNumber;
 };
 
-export default () => { 
-  const rules = 'Find the greatest common divisor of given numbers.'
-  return runEngine(rules, generateArrNOD())}
+export default () => {
+  const rules = "Find the greatest common divisor of given numbers.";
+  return runEngine(rules, generateArrNOD());
+};

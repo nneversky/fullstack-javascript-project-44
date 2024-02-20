@@ -19,15 +19,13 @@ const strProgress = () => {
 
 const strProgressionNum = () => {
   const arrNum = [];
-  for (let i = 0; i < 3; i++) 
-    arrNum.push(strProgress());
+  for (let i = 0; i < 3; i++) arrNum.push(strProgress());
   return arrNum;
 };
 
 const strArrayProgress = (arr) => {
   const arrProgression = [];
-  for (let i = 0; i < 3; i++) 
-    arrProgression.push(...arr[i][0]);
+  for (let i = 0; i < 3; i++) arrProgression.push(...arr[i][0]);
   return arrProgression;
 };
 
@@ -35,11 +33,12 @@ const numArrayProgress = () => {
   const progressionAnswer = strProgressionNum();
   const strProgressionNumber = strArrayProgress(progressionAnswer);
   const arrNumProgress = [];
-  for (let i = 0; i < 3; i++) 
+  for (let i = 0; i < 3; i++)
     arrNumProgress.push([strProgressionNumber[i], progressionAnswer[i][1]]);
   return arrNumProgress;
 };
 
-export default () => { 
-  const rules = 'What number is missing in the progression?'
-  return runEngine(rules, numArrayProgress())}
+export default () => {
+  const rules = "What number is missing in the progression?";
+  return runEngine(rules, numArrayProgress());
+};
