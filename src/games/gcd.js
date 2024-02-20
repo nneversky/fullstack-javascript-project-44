@@ -1,4 +1,3 @@
-/* eslint-disable */
 import runEngine from "../index.js";
 import { getRandomInRange } from "../utils.js";
 
@@ -17,25 +16,20 @@ const arrRandomNum = () => {
 
 const arrNODNum = (arr) => {
   const arrNOD = [];
-  for (let i = 0; i < 3; i++) arrNOD.push(nod(arr[i][0], arr[i][1]));
+  for (let i = 0; i < 3; i++) 
+    arrNOD.push(nod(arr[i][0], arr[i][1]));
   return arrNOD;
 };
 
-const arrNOD = () => {
-  const arrEquation = arrRandomNum();
-  const one = arrNODNum(arrEquation);
-  const arr = [];
+const generateArrNOD = () => {
+  const arrRandomNumber = arrRandomNum();
+  const arrNODNubmber = arrNODNum(arrRandomNumber);
+  const arrNODandRandomNumber = [];
   for (let i = 0; i < 3; i++)
-    arr.push([`${arrEquation[i][0]} ${arrEquation[i][1]}`, one[i]]);
-  return arr;
+    arrNODandRandomNumber.push([`${arrRandomNumber[i][0]} ${arrRandomNumber[i][1]}`, arrNODNubmber[i]]);
+  return arrNODandRandomNumber;
 };
 
-const mainGcdFunc = (nameUser) => {
-  return runEngine(
-    nameUser,
-    "Find the greatest common divisor of given numbers.",
-    arrNOD(arrRandomNum())
-  );
-};
-
-export default mainGcdFunc;
+export default () => { 
+  const rules = 'Find the greatest common divisor of given numbers.'
+  return runEngine(rules, generateArrNOD())}

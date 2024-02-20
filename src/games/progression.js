@@ -1,4 +1,3 @@
-/* eslint-disable */
 import runEngine from "../index.js";
 import { getRandomInRange } from "../utils.js";
 
@@ -8,7 +7,7 @@ const strProgress = () => {
   let numFine = [[]];
   let numProgress = getRandomInRange(1, 10);
   let num3 = 0;
-  for (let i = 0; i < 10; i++) {
+  for (let i = 1; i < 11; i++) {
     num2 += num;
     numFine[0][0] = i === numProgress ? `${numFine} ..` : `${numFine} ${num2}`;
     if (i === numProgress) num3 = num2;
@@ -20,30 +19,27 @@ const strProgress = () => {
 
 const strProgressionNum = () => {
   const arrNum = [];
-  for (let i = 0; i < 3; i++) arrNum.push(strProgress());
+  for (let i = 0; i < 3; i++) 
+    arrNum.push(strProgress());
   return arrNum;
 };
 
 const strArrayProgress = (arr) => {
-  const arrNum = [];
-  for (let i = 0; i < 3; i++) arrNum.push(...arr[i][0]);
-  return arrNum;
+  const arrProgression = [];
+  for (let i = 0; i < 3; i++) 
+    arrProgression.push(...arr[i][0]);
+  return arrProgression;
 };
 
 const numArrayProgress = () => {
-  const arr = strProgressionNum();
-  const strArr = strArrayProgress(arr);
-  const arrNum = [];
-  for (let i = 0; i < 3; i++) arrNum.push([strArr[i], arr[i][1]]);
-  return arrNum;
+  const progressionAnswer = strProgressionNum();
+  const strProgressionNumber = strArrayProgress(progressionAnswer);
+  const arrNumProgress = [];
+  for (let i = 0; i < 3; i++) 
+    arrNumProgress.push([strProgressionNumber[i], progressionAnswer[i][1]]);
+  return arrNumProgress;
 };
 
-const mainProgressionFunc = (nameUser) => {
-  return runEngine(
-    nameUser,
-    "What number is missing in the progression?",
-    numArrayProgress()
-  );
-};
-
-export default mainProgressionFunc;
+export default () => { 
+  const rules = 'What number is missing in the progression?'
+  return runEngine(rules, numArrayProgress())}

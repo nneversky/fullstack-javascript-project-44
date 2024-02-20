@@ -1,38 +1,31 @@
-/* eslint-disable */
 import runEngine from "../index.js";
 import { getRandomInRange } from "../utils.js";
 
 const arrRandomNum = () => {
   const arrEquation = [];
-  for (let i = 0; i < 3; i++) arrEquation.push(getRandomInRange(0, 100));
+  for (let i = 0; i < 3; i++) 
+    arrEquation.push(getRandomInRange(0, 100));
   return arrEquation;
 };
 
-const arrRandomNumEval = (arr) => {
-  const arrRandomEval = [];
-  for (let value of arr) {
-    let checkQuestion = value % 2 === 0 ? "yes" : "no";
-    arrRandomEval.push(checkQuestion);
-  }
-  return arrRandomEval;
-};
+const arrAnswer = (arr) => {
+  const arrEvenNum = arr.map((num) => {
+    if (num % 2 === 0)
+      return 'yes'
+    return 'no'
+  })
+  return arrEvenNum
+}
 
-const arrGenerateRound = () => {
-  const randomArr = arrRandomNum();
-  const arrEval = arrRandomNumEval(randomArr);
-  const arrEven = [];
-  for (let i = 0; i < 3; i++) {
-    arrEven.push([randomArr[i], arrEval[i]]);
-  }
-  return arrEven;
-};
+const generateArrRound = () => {
+  const arrRandomNumber = arrRandomNum()
+  const arrAnswerYesOrNo = arrAnswer(arrRandomNumber)
+  const arrEvenNum = []
+  for (let i = 0; i < arrRandomNumber.length; i ++)
+    arrEvenNum.push([arrRandomNumber[i], arrAnswerYesOrNo[i]])
+  return arrEvenNum
+}
 
-const mainEvenFunc = (nameUser) => {
-  return runEngine(
-    nameUser,
-    'Answer "yes" if the number is even, otherwise answer "no".',
-    arrGenerateRound()
-  );
-};
-
-export default mainEvenFunc;
+export default () => { 
+  const rules = 'Answer "yes" if the number is even, otherwise answer "no".'
+  return runEngine(rules, generateArrRound())}

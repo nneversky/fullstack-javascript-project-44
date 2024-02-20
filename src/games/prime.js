@@ -1,37 +1,31 @@
-/* eslint-disable */
 import runEngine from "../index.js";
 import { getRandomInRange } from "../utils.js";
 
 const findSimpleNum = (num) => {
   let checkTrue = true;
   for (let i = 2; i <= Math.floor(Math.sqrt(num)); i++) {
-    if (num % i === 0) checkTrue = false;
+    if (num % i === 0) 
+      checkTrue = false;
   }
-  checkTrue = checkTrue === true ? "yes" : "no";
-  return checkTrue;
+  return checkTrue === true ? "yes" : "no";
 };
 
 const arrRandomNum = () => {
   const arrEquation = [];
-  for (let i = 0; i < 3; i++) arrEquation.push(getRandomInRange(0, 100));
+  for (let i = 0; i < 3; i++) 
+    arrEquation.push(getRandomInRange(1, 100));
   return arrEquation;
 };
 
-const simlpeArrNum = () => {
-  const randomArrOne = arrRandomNum();
-  const arrNum = [];
+const arrSimpleNumAndAnswer = () => {
+  const randomSimpleArrNum = arrRandomNum();
+  const arrSimpleNum = [];
   for (let i = 0; i < 3; i++) {
-    arrNum.push([randomArrOne[i], findSimpleNum(randomArrOne[i])]);
+    arrSimpleNum.push([randomSimpleArrNum[i], findSimpleNum(randomSimpleArrNum[i])]);
   }
-  return arrNum;
+  return arrSimpleNum;
 };
 
-const mainPrimeFunc = (nameUser) => {
-  return runEngine(
-    nameUser,
-    'Answer "yes" if given number is prime. Otherwise answer "no".',
-    simlpeArrNum()
-  );
-};
-
-export default mainPrimeFunc;
+export default () => { 
+  const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+  return runEngine(rules, arrSimpleNumAndAnswer())}
