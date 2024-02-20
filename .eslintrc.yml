@@ -17,7 +17,9 @@ parserOptions:
   ecmaVersion: latest
   sourceType: module
 
-rules:
+rules: {
+    'jsx-quotes': [2, 'prefer-single'],
+  }
   'no-console': 'off',
   import/extensions: # FIXME: remove when rule will be adjusted for new nodejs version
     - error
