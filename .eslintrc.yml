@@ -17,6 +17,7 @@ parserOptions:
 
 rules:
   import/extensions: # FIXME: remove when rule will be adjusted for new nodejs version
+    - no-plusplus: ["error", { "allowForLoopAfterthoughts": true }]
     - error
     - ignorePackages
     - js: always
