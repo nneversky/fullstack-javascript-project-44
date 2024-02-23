@@ -16,6 +16,7 @@ parserOptions:
   sourceType: module
 
 rules:
+  no-console: off
   import/extensions: # FIXME: remove when rule will be adjusted for new nodejs version
     - error
     - ignorePackages

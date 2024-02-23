@@ -2,10 +2,10 @@ import runEngine from '../index.js';
 import { getRandomInRange } from '../utils.js';
 
 const strProgress = () => {
-  let num = getRandomInRange(1, 10);
+  const num = getRandomInRange(1, 10);
   let num2 = getRandomInRange(1, 10);
-  let numFine = [[]];
-  let numProgress = getRandomInRange(1, 10);
+  const numFine = [[]];
+  const numProgress = getRandomInRange(1, 10);
   let num3 = 0;
   for (let i = 1; i < 11; i++) {
     num2 += num;

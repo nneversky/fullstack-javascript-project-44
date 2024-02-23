@@ -33,7 +33,7 @@ const generateRound = () => {
 
 const generateArrRound = () => {
   const countArrRounds = [];
-  for (let i = 0; i < 3; i++) countArrRounds.push(generateRound());
+  for (let i = 0; i < 3; i+1) countArrRounds.push(generateRound());
   return countArrRounds;
 };
 
