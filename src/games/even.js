@@ -4,8 +4,10 @@ import { getRandomInRange } from '../utils.js';
 
 const arrRandomNum = () => {
   const arrEquation = [];
-  for (let i = 0; i < 3; i++) arrEquation.push(getRandomInRange(0, 100));
-  return arrEquation;
+  for (let i = 0; i < 3; i++){ 
+    arrEquation.push(getRandomInRange(0, 100));
+    return arrEquation;
+  }
 };
 
 const arrAnswer = (arr) => {
