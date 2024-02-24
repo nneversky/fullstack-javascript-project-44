@@ -4,7 +4,9 @@ import { getRandomInRange } from '../utils.js';
 
 const arrRandomNum = () => {
   const arrEquation = [];
-  for (let i = 0; i < 3; i++) arrEquation.push(getRandomInRange(0, 100));
+  for (let i = 0; i < 3; i++){ 
+    arrEquation.push(getRandomInRange(0, 100));
+  }
   return arrEquation;
 };
 
@@ -20,8 +22,9 @@ const generateArrRound = () => {
   const arrRandomNumber = arrRandomNum();
   const arrAnswerYesOrNo = arrAnswer(arrRandomNumber);
   const arrEvenNum = [];
-  for (let i = 0; i < arrRandomNumber.length; i++)
+  for (let i = 0; i < arrRandomNumber.length; i++){
     arrEvenNum.push([arrRandomNumber[i], arrAnswerYesOrNo[i]]);
+  }
   return arrEvenNum;
 };
 
