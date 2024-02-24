@@ -25,7 +25,7 @@ const runEngine = (rules, arrGenerateRound) => {
       return console.log(`Let's try again, ${nameUser}!`);
     }
   }
-  console.log(`Congratulations, ${nameUser}!`);
+  return console.log(`Congratulations, ${nameUser}!`);
 };
 
 export default runEngine;

@@ -34,7 +34,9 @@ const numArrayProgress = () => {
   const progressionAnswer = strProgressionNum();
   const strProgressionNumber = strArrayProgress(progressionAnswer);
   const arrNumProgress = [];
-  for (let i = 0; i < 3; i++) arrNumProgress.push([strProgressionNumber[i], progressionAnswer[i][1]]);
+  for (let i = 0; i < 3; i++) {
+    arrNumProgress.push([strProgressionNumber[i], progressionAnswer[i][1]]);
+  }
   return arrNumProgress;
 };
 
