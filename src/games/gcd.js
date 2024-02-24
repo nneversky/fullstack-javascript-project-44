@@ -1,6 +1,6 @@
 /* eslint-disable no-plusplus */
 import runEngine from '../index.js';
-import { getRandomInRange } from '../utils.js';
+import getRandomInRange from '../utils.js';
 
 const nod = (x, y) => {
   if (y > x) return nod(y, x);
