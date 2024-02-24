@@ -8,7 +8,9 @@
         "sourceType": "module"
     },
     "rules": {
-        "no-console": "off",
+        "rules": {
+            "no-console": "off"
+          },
         "import/extensions": [
            "error",
            "ignorePackages",
