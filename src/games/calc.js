@@ -33,8 +33,8 @@ const generateRound = () => {
 
 const generateArrRound = () => {
   const countArrRounds = [];
-    // eslint-disable-next-line no-plusplus
-  for (let i = 0; i < 3; i+1) countArrRounds.push(generateRound());
+  // eslint-disable-next-line no-plusplus
+  for (let i = 0; i < 3; i++) countArrRounds.push(generateRound());
   return countArrRounds;
 };
 
