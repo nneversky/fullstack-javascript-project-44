@@ -12,7 +12,7 @@ const roundsCount = 3;
 const runEngine = (rules, arrGenerateRound) => {
   const nameUser = makeWelcome();
   console.log(rules);
-    // eslint-disable-next-line no-plusplus
+  // eslint-disable-next-line no-plusplus
   for (let i = 0; i < roundsCount; i++) {
     const [value, key] = arrGenerateRound[i];
     const round = generateRound(value);
@@ -20,7 +20,7 @@ const runEngine = (rules, arrGenerateRound) => {
       console.log('Correct!');
     } else {
       console.log(
-        `'${round}' is wrong answer ;(. Correct answer was '${key}'.`
+        `'${round}' is wrong answer ;(. Correct answer was '${key}'.`,
       );
       return console.log(`Let's try again, ${nameUser}!`);
     }
