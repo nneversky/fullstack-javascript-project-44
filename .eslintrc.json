@@ -8,9 +8,7 @@
         "sourceType": "module"
     },
     "rules": {
-        "rules": {
-            "no-plusplus": "off"
-          },
+        "no-plusplus": "off",
         "import/extensions": [
            "error",
            "ignorePackages",
