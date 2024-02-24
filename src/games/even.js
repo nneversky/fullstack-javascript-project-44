@@ -1,4 +1,3 @@
-/* eslint-disable no-plusplus */
 import runEngine from '../index.js';
 import getRandomInRange from '../utils.js';
 
