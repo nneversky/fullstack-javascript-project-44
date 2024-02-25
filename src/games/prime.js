@@ -1,10 +1,9 @@
-/* eslint-disable no-plusplus */
 import runEngine from '../index.js';
 import getRandomInRange from '../utils.js';
 
 const findSimpleNum = (num) => {
   let checkTrue = true;
-  for (let i = 2; i <= Math.floor(Math.sqrt(num)); i++) {
+  for (let i = 2; i <= Math.floor(Math.sqrt(num)); i += 1) {
     if (num % i === 0) checkTrue = false;
   }
   return checkTrue === true ? 'yes' : 'no';
@@ -12,14 +11,14 @@ const findSimpleNum = (num) => {
 
 const arrRandomNum = () => {
   const arrEquation = [];
-  for (let i = 0; i < 3; i++) arrEquation.push(getRandomInRange(1, 100));
+  for (let i = 0; i < 3; i += 1) arrEquation.push(getRandomInRange(1, 100));
   return arrEquation;
 };
 
 const arrSimpleNumAndAnswer = () => {
   const randomSimpleArrNum = arrRandomNum();
   const arrSimpleNum = [];
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 3; i += 1) {
     arrSimpleNum.push([
       randomSimpleArrNum[i],
       findSimpleNum(randomSimpleArrNum[i]),

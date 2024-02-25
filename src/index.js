@@ -12,8 +12,7 @@ const roundsCount = 3;
 const runEngine = (rules, arrGenerateRound) => {
   const nameUser = makeWelcome();
   console.log(rules);
-  // eslint-disable-next-line no-plusplus
-  for (let i = 0; i < roundsCount; i++) {
+  for (let i = 0; i < roundsCount; i += 1) {
     const [value, key] = arrGenerateRound[i];
     const round = generateRound(value);
     if (round === String(key)) {

@@ -1,4 +1,3 @@
-/* eslint-disable no-plusplus */
 import runEngine from '../index.js';
 import getRandomInRange from '../utils.js';
 
@@ -8,7 +7,7 @@ const strProgress = () => {
   const numFine = [[]];
   const numProgress = getRandomInRange(1, 10);
   let num3 = 0;
-  for (let i = 1; i < 11; i++) {
+  for (let i = 1; i < 11; i += 1) {
     num2 += num;
     numFine[0][0] = i === numProgress ? `${numFine} ..` : `${numFine} ${num2}`;
     if (i === numProgress) num3 = num2;
@@ -20,13 +19,13 @@ const strProgress = () => {
 
 const strProgressionNum = () => {
   const arrNum = [];
-  for (let i = 0; i < 3; i++) arrNum.push(strProgress());
+  for (let i = 0; i < 3; i += 1) arrNum.push(strProgress());
   return arrNum;
 };
 
 const strArrayProgress = (arr) => {
   const arrProgression = [];
-  for (let i = 0; i < 3; i++) arrProgression.push(...arr[i][0]);
+  for (let i = 0; i < 3; i += 1) arrProgression.push(...arr[i][0]);
   return arrProgression;
 };
 
@@ -34,7 +33,7 @@ const numArrayProgress = () => {
   const progressionAnswer = strProgressionNum();
   const strProgressionNumber = strArrayProgress(progressionAnswer);
   const arrNumProgress = [];
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 3; i += 1) {
     arrNumProgress.push([strProgressionNumber[i], progressionAnswer[i][1]]);
   }
   return arrNumProgress;
