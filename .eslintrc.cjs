@@ -29,6 +29,6 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    'no-plusplus': 'error',
+    'no-console': 'off',
   },
 };
