@@ -2,8 +2,7 @@ import runEngine from '../index.js';
 import getRandomInRange from '../utils.js';
 
 const randomSymbolMath = () => {
-  const symbolMath = ['-', '+', '*'];
-  return ['-', '+', '*'].at(getRandomInRange(0, symbolMath.length - 1));
+  const symbolMath = ['-', '+', '*']; return symbolMath[getRandomInRange(0, symbolMath.length - 1)];
 };
 
 const calculation = (num1, num2, operator) => {
@@ -31,13 +30,7 @@ const generateRound = () => {
   return [question, answer];
 };
 
-const generateArrRound = () => {
-  const countArrRounds = [];
-  for (let i = 0; i < 3; i += 1) countArrRounds.push(generateRound());
-  return countArrRounds;
-};
-
 export default () => {
   const rules = 'What is the result of the expression?';
-  return runEngine(rules, generateArrRound());
+  return runEngine(rules, generateRound);
 };

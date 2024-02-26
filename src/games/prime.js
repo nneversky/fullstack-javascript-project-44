@@ -9,25 +9,12 @@ const findSimpleNum = (num) => {
   return checkTrue === true ? 'yes' : 'no';
 };
 
-const arrRandomNum = () => {
-  const arrEquation = [];
-  for (let i = 0; i < 3; i += 1) arrEquation.push(getRandomInRange(1, 100));
-  return arrEquation;
-};
-
-const arrSimpleNumAndAnswer = () => {
-  const randomSimpleArrNum = arrRandomNum();
-  const arrSimpleNum = [];
-  for (let i = 0; i < 3; i += 1) {
-    arrSimpleNum.push([
-      randomSimpleArrNum[i],
-      findSimpleNum(randomSimpleArrNum[i]),
-    ]);
-  }
-  return arrSimpleNum;
+const generateRound = () => {
+  const num1 = getRandomInRange(1, 100);
+  return [num1, findSimpleNum(num1)];
 };
 
 export default () => {
   const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  return runEngine(rules, arrSimpleNumAndAnswer());
+  return runEngine(rules, generateRound);
 };

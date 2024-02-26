@@ -7,33 +7,13 @@ const nod = (x, y) => {
   return nod(y, x % y);
 };
 
-const arrRandomNum = () => {
-  const arrEquation = [];
-  for (let i = 0; i < 3; i += 1) {
-    arrEquation.push([getRandomInRange(0, 100), getRandomInRange(0, 100)]);
-  }
-  return arrEquation;
-};
-
-const arrNODNum = (arr) => {
-  const arrNOD = [];
-  for (let i = 0; i < 3; i += 1) {
-    arrNOD.push(nod(arr[i][0], arr[i][1]));
-  }
-  return arrNOD;
-};
-
-const generateArrNOD = () => {
-  const arrRandomNumber = arrRandomNum();
-  const arrNODNubmber = arrNODNum(arrRandomNumber);
-  const arrNODandRandomNumber = [];
-  for (let i = 0; i < 3; i += 1) {
-    arrNODandRandomNumber.push([`${arrRandomNumber[i][0]} ${arrRandomNumber[i][1]}`, arrNODNubmber[i]]);
-  }
-  return arrNODandRandomNumber;
+const generateRound = () => {
+  const num1 = getRandomInRange(0, 100);
+  const num2 = getRandomInRange(0, 100);
+  return [`${num1} ${num2}`, nod(num1, num2)];
 };
 
 export default () => {
   const rules = 'Find the greatest common divisor of given numbers.';
-  return runEngine(rules, generateArrNOD());
+  return runEngine(rules, generateRound);
 };

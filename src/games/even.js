@@ -1,33 +1,16 @@
 import runEngine from '../index.js';
 import getRandomInRange from '../utils.js';
 
-const arrRandomNum = () => {
-  const arrEquation = [];
-  for (let i = 0; i < 3; i += 1) {
-    arrEquation.push(getRandomInRange(0, 100));
-  }
-  return arrEquation;
-};
+const isEven = (num) => num % 2 === 0;
 
-const arrAnswer = (arr) => {
-  const arrEvenNum = arr.map((num) => {
-    if (num % 2 === 0) return 'yes';
-    return 'no';
-  });
-  return arrEvenNum;
-};
-
-const generateArrRound = () => {
-  const arrRandomNumber = arrRandomNum();
-  const arrAnswerYesOrNo = arrAnswer(arrRandomNumber);
-  const arrEvenNum = [];
-  for (let i = 0; i < arrRandomNumber.length; i += 1) {
-    arrEvenNum.push([arrRandomNumber[i], arrAnswerYesOrNo[i]]);
-  }
-  return arrEvenNum;
+const generateRound = () => {
+  const number = getRandomInRange();
+  const answer = isEven(number) ? 'yes' : 'no';
+  const question = String(number);
+  return [question, answer];
 };
 
 export default () => {
   const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
-  return runEngine(rules, generateArrRound());
+  return runEngine(rules, generateRound);
 };

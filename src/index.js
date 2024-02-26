@@ -9,11 +9,11 @@ const generateRound = (question) => {
 
 const roundsCount = 3;
 
-const runEngine = (rules, arrGenerateRound) => {
+const runEngine = (rules, GenerateRound) => {
   const nameUser = makeWelcome();
   console.log(rules);
   for (let i = 0; i < roundsCount; i += 1) {
-    const [value, key] = arrGenerateRound[i];
+    const [value, key] = GenerateRound();
     const round = generateRound(value);
     if (round === String(key)) {
       console.log('Correct!');

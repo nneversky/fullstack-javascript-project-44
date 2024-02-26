@@ -1,7 +1,7 @@
 import runEngine from '../index.js';
 import getRandomInRange from '../utils.js';
 
-const strProgress = () => {
+const generateRound = () => {
   const num = getRandomInRange(1, 10);
   let num2 = getRandomInRange(1, 10);
   const numFine = [[]];
@@ -17,29 +17,7 @@ const strProgress = () => {
   return numFine;
 };
 
-const strProgressionNum = () => {
-  const arrNum = [];
-  for (let i = 0; i < 3; i += 1) arrNum.push(strProgress());
-  return arrNum;
-};
-
-const strArrayProgress = (arr) => {
-  const arrProgression = [];
-  for (let i = 0; i < 3; i += 1) arrProgression.push(...arr[i][0]);
-  return arrProgression;
-};
-
-const numArrayProgress = () => {
-  const progressionAnswer = strProgressionNum();
-  const strProgressionNumber = strArrayProgress(progressionAnswer);
-  const arrNumProgress = [];
-  for (let i = 0; i < 3; i += 1) {
-    arrNumProgress.push([strProgressionNumber[i], progressionAnswer[i][1]]);
-  }
-  return arrNumProgress;
-};
-
 export default () => {
   const rules = 'What number is missing in the progression?';
-  return runEngine(rules, numArrayProgress());
+  return runEngine(rules, generateRound);
 };
