@@ -2,7 +2,8 @@ import runEngine from '../index.js';
 import getRandomInRange from '../utils.js';
 
 const randomSymbolMath = () => {
-  const symbolMath = ['-', '+', '*']; return symbolMath[getRandomInRange(0, symbolMath.length - 1)];
+  const symbolMath = ['-', '+', '*'];
+  return symbolMath[getRandomInRange(0, symbolMath.length - 1)];
 };
 
 const calculation = (num1, num2, operator) => {

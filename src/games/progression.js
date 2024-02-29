@@ -1,20 +1,23 @@
 import runEngine from '../index.js';
 import getRandomInRange from '../utils.js';
 
-const generateRound = () => {
-  const num = getRandomInRange(1, 10);
-  let num2 = getRandomInRange(1, 10);
-  const numFine = [[]];
-  const numProgress = getRandomInRange(1, 10);
-  let num3 = 0;
-  for (let i = 1; i < 11; i += 1) {
-    num2 += num;
-    numFine[0][0] = i === numProgress ? `${numFine} ..` : `${numFine} ${num2}`;
-    if (i === numProgress) num3 = num2;
+const generateProgression = (start, step, length = 10) => {
+  const progression = [];
+  for (let i = 0; i < length; i += 1) {
+    progression.push(start + step * i);
   }
-  numFine[0][0] = numFine[0][0].slice(1);
-  numFine[1] = num3;
-  return numFine;
+  return progression;
+};
+
+const generateRound = () => {
+  const start = getRandomInRange();
+  const step = getRandomInRange(5, 10);
+  const progression = generateProgression(start, step);
+  const hiddenIndex = getRandomInRange(0, progression.length - 1);
+  const answer = progression[hiddenIndex].toString();
+  progression[hiddenIndex] = '..';
+  const question = progression.join(' ');
+  return [question, answer];
 };
 
 export default () => {

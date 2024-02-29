@@ -10,7 +10,9 @@ const nod = (x, y) => {
 const generateRound = () => {
   const num1 = getRandomInRange(0, 100);
   const num2 = getRandomInRange(0, 100);
-  return [`${num1} ${num2}`, nod(num1, num2)];
+  const question = `${num1} ${num2}`;
+  const answer = nod(num1, num2);
+  return [question, answer];
 };
 
 export default () => {
