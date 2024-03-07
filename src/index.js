@@ -7,8 +7,8 @@ const runEngine = (rules, GenerateRound) => {
   const nameUser = makeWelcome();
   console.log(rules);
   for (let i = 0; i < roundsCount; i += 1) {
-    const [value, answer] = GenerateRound();
-    console.log(`Question: ${value}`);
+    const [question, answer] = GenerateRound();
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === String(answer)) {
       console.log('Correct!');
